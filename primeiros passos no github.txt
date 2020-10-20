@@ -1,0 +1,167 @@
+//GIT 
+
+VERIRICAR VERSION GIT
+>> git version
+
+CONFIGURAR NOME DO USUARIO
+>> git config user.name "Alexsandro"
+
+CONFIGURAR E-MAIL	
+>> git config user.email "alex_...@..."
+
+ VERIFICAR EDITOR CONFIGURADO 
+ >>git config core.editor
+ 
+ CONFIGURAR NOVO EDITOR
+ >> git config --global core.editor "C:\caminho do executavel"
+ 
+ CONFIGURAR ABERTURA DO VSCODE PELO CLI
+ >> copiar caminho do executável
+  >> abrir painel de controle no modo categoria
+   >> selecionar sistema e segurança
+    >> selecionar sistema
+	 >> selecionar configurações avançadas do sistema
+	  >> variáveis de ambiente
+	   >> abaixo do campo variáveis do sistema clicar em novo
+	    >> Em nome da variável escrever o nome pelo será chamado o programa, exemplo: "code"
+		 >> em valor da variável colar o caminho do executavel
+		  >> abrir o git, escrever code e digitar enter para executar
+
+ABRIR O VSCODE JÁ NO PROEJTO
+>> code .
+
+DESCOBRIR EM QUAL DIRETORIO ESTA
+>> pwd
+
+SELECIONAR UM DIRETORIO 
+>> cd pasta
+
+EXIBIR DIRETORIO 
+>> ls 
+
+RETORNAR AO DIRETORIO ANTERIOR
+>> cd ..
+
+RETORNAR AO DIRETORIO PRINCIPAL
+>> cd
+
+CRIAR DIRETORIO/PASTA
+>>mkdir
+
+CRIAR ARQUIVO 
+>> touch exemplo.txt
+
+EXIBIR ARQUIVOS E CONTEUDOS OCULTOS 
+>> ls -a
+
+LIMPAR A TELA
+>> clear ou CTRL+L
+ 
+CRIAR REPOSITORIO NA PASTA SELECIONADA
+>> git init
+
+VERIFICAR SE´HÁ ALGUM ARQUIVO NOVO OU MODIFICAÇÃO PARA SER ARMAZENADO NO REPOSITORIO
+>> git status
+
+ADICIONAR UM ARQUIVO AO CONTAINER
+>> git add  
+
+ADICIONAR VARIOS ARQUIVOS AO CONTAINER 
+>> git add .  
+  ou 
+>> git add *  
+obs: não é necessário informar o arquivo
+
+IDENTIFICAR O CONTAINER E ARMAZENAR NO REPOSITORIO
+>> git commit -m  "comentário acerca da modificação"
+
+IDENTIFICAR E ADD NO CONTAINER E ARMAZENAR NO REPOSITORIO
+>> git commit -am  "comentário acerca da modificação"
+
+EXIBIR INFORMAÇÕES SOBRE OS COMMMIT'S REALIZADOS 
+>> git log			  S/ IDENTIFICADORES
+	ou
+>> git log --oneline  C/ IDENTIFICADORES 
+
+EXIBIR MODIFICAÇÕES DETALHADAS 
+>>git diff
+observações:
+-> conteúdo em vermelho se refere ao que foi removido
+-> conteúdo em verde se refere ao que foi inserido
+-> Este comando não exibe info quando o conteudo esta no container, quando isso ocorrer seguir instruções 
+do git status utilizando o git reset
+
+EXIBIR O GRAPH DO COMMIT
+>> git log --graph
+
+EXIBIR O RAMO DO PROJETO
+>> git branch
+
+RASTREAR MUDANÇAS EM UM RASH
+>> git checkout
+
+PARA RETORNAR AO ULTIMO RASH CRIADO
+>> git checkout master
+
+DESFAZER ALTERAÇÕES REALIZADAS
+>> git checkout arquivo.extensao
+
+REMOVER ALTERAÇÕES DO CONTEUDO NO CONTAINER
+>> git reset
+
+REMOVENDO  UM COMMIT 
+>>git reset --hard versão anterior a última
+
+CRIAR NOVA RAMIFICAÇÃO DO PROJETO
+>> git checkout -b nome_teste
+observação: 
+-> Ao criar novo ramo, todos os commit serão atribuidos a ele a partir de sua criação
+-> O ramo herda todos os commit do ramo master
+
+RETORNAR AO RAMO MASTER 
+>> git checkout master
+
+EXIBIR TODAS AS RAMIFICAÇÕES COM ALL
+>> git log --oneline --graph --all
+
+DETRAVAR A TELA 
+>> pressionar a tecla Q
+
+UNIR RAMOS PARA GERAR UMA UNICA VERSÃO
+>> git merge teste
+observação: 
+se for exibida a msg CONFLICT (content), verifica-se no editor vscode opçoes para tratamento do conflito
+selecionar neste caso [accept both changes]
+
+
+ENVIE UM REPOSITORIO EXISTENTE A PARTIR DA LINHA DE COMANDO
+>> git remote add origin https://github.com/USUARIO/REPOSITORIO.git
+-> git remote 
+
+EXIBIR DETALHES DO REPOSITORIO REMOTO
+>> git remote -v
+
+
+CLONAR REPOSITORIO 
+>> git clone https://github.com/usuario/repositorio.git
+
+ENVIAR ALTERAÇÕES AO GITHUB
+>> git push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 

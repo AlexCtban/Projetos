@@ -149,6 +149,31 @@ ENVIAR ALTERAÇÕES AO GITHUB
 >> git push
 
 
+CRIANDO O .GITIGNORE
+>> touch .GITIGNORE
+
+PADRÕES 
+arqTeste 
+>>"ignora o arquivo ou diretorio "
+
+*.log  
+>>"ignora todos os arquivos com extensão .log"
+
+arq*  
+>>"ignora todos os arquivos iniciados com arq"
+
+?rq 
+>>"ignora todos os arquivos não importando o primeiro caractere, mas que possua 
+rq na sequencia"
+
+dirTeste/
+>>"ignora o diretorio dirTeste e seus arquivos "
+
+**/dirTeste
+>>"ignora todos os diretorios de nome dirTeste
+
+!valor.log
+>>"Não ignora o arquivo valor.log"
 
 
 

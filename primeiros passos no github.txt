@@ -175,7 +175,14 @@ dirTeste/
 !valor.log
 >>"Não ignora o arquivo valor.log"
 
+INCLUIR TEXTO NO .GITIGNORE
 
+>> echo arquivo_a >> .gitignore
+
+
+EXIBIR CONTEUDO DO GITIGNORE
+
+>> cat .gitignore
 
 
 

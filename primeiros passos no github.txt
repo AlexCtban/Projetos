@@ -185,7 +185,8 @@ EXIBIR CONTEUDO DO GITIGNORE
 >> cat .gitignore
 
 
-
+VERIFICAR SE HÁ VERSÕES PARA ATUALIZAR
+composer outdated
 
 
 

@@ -189,6 +189,9 @@ VERIFICAR SE HÁ VERSÕES PARA ATUALIZAR
 composer outdated
 
 
+FAZER DOWNGRADE DO COMPOSER 
+composer self-update --1
+
 
 
 
